@@ -57,7 +57,7 @@ if [ $target == 'staging' ]
 then
     printf "\ndeploying staging application config...\n"
     cp ./config/application.config.php.staging.dist ./config/application.config.php
-    printf copying staging default dist files with --no-clobber
+    printf "\ncopying staging default dist files with --no-clobber...\n"
     cp -n ./config/autoload/staging.local.php.dist ./config/autoload/staging.local.php
 fi
 if [ $target == 'production' ]
